@@ -1,5 +1,4 @@
 from __future__ import print_function
-import time
 import numpy as np
 import mxnet as mx
 from mxnet import nd, autograd, gluon
