@@ -64,8 +64,8 @@ def search_over_NNs(X_tr, X_test, Y_tr, Y_test, epochs, num_hidden_arr, activati
         metrics['time'] = np.zeros(epochs)
         metrics['train_accuracy'] = np.zeros(epochs)
         metrics['test_losses'] = np.zeros(epochs)
-        metrics['test_accuracy'] 100ros(epochs)
-        metrics['model_id'] = random.randint(3,1000000)*np.ones(epochs)
+        metrics['test_accuracy'] np.zeros(epochs)
+        metrics['model_id'] = random.randint(3,100)*np.ones(epochs)
         model_dict = {'model_id': int(metrics['model_id'][0]), 'hidden_layers': list(num_hidden_arr[j]), 'activations': 
                      list(activations_arr[j])}
         
