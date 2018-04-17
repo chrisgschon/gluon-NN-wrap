@@ -33,10 +33,10 @@ def softmax(y):
 
 def search_over_NNs(X_tr, X_test, Y_tr, Y_test, epochs, num_hidden_arr, activations_arr, loss_func, init_std = 0.1, learning_rate =.01, momentum = 0.9):
     """Function for searching over Gluon NN architectures and hyperparameters. 
-    X_tr: original training data, numpy array
-    X_test: original test data, numpy array
-    Y_tr: numpy array of training labels
-    Y_test: numpy array of test labels
+    X_tr: original training data, numpy array or pd df
+    X_test: original test data, numpy array or pd df
+    Y_tr: numpy array of training labels or pd df. Booleans will be converted to ints.
+    Y_test: numpy array of test labels or pd df. Booleans will be converted to ints.
     epochs: number of iterations over training data
     num_hidden_arr: array of num_hidden lists, providing the different architectures
     acitvations_arr: array of activations lists, giving the activation functions of the layers
